@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#FF135E57"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="Recipe"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        >
+
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:background="#FF135E57"
+            android:onClick="home"
+            android:text="Home"
+            app:backgroundTint="#FF135E57">
+
+        </Button>
+
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#009688"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        ></TextView>
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        android:background="#FFFAE7ED"
+        android:scaleType="fitXY"
+        android:src="@drawable/cupcake"
+        android:visibility="visible">
+
+    </ImageView>
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="">
+
+    </TextView>
+
+</LinearLayout>

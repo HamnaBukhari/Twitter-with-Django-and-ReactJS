@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CDF2F6"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CDF2F6"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:background="#009688"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text=" Strawberry Cupcakes"
+            android:textColor="@android:color/background_light"
+            android:textSize="25sp"
+            >
+
+        </TextView>
+
+
+        <FrameLayout
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:background="#FFFAE7ED"
+                android:scaleType="fitXY"
+                android:src="@drawable/cupcake"
+                android:visibility="visible">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-black"
+                android:text=""
+                android:visibility="gone"
+
+
+                ></TextView>
+
+        </FrameLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#CDF2F6">
+
+            <Button
+                android:id="@+id/btn2"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#FF135E57"
+                android:fontFamily="sans-serif-black"
+                android:onClick="open"
+                android:text="Description"
+                android:textSize="18sp"
+                app:backgroundTint="#FF135E57">
+
+            </Button>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btn3"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#FF135E57"
+                android:fontFamily="sans-serif-black"
+
+                android:onClick="back"
+                android:text="Back"
+                android:textSize="18sp"
+                app:backgroundTint="#FF135E57">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn1"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#FF135E57"
+                android:fontFamily="sans-serif-black"
+                android:includeFontPadding="false"
+                android:onClick="next"
+                android:text="Next"
+                android:textSize="18sp"
+                app:backgroundTint="#FF135E57">
+
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/t1l2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:padding="10dp"
+            android:text="">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
